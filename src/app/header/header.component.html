@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="#">Takkaru Studio</a>
     </div>
     <ul class="nav navbar-nav">
-      <li *ngFor="let item of navItems">
+      <li *ngFor="let item of navItems" ngClass="{{item.isActive ? 'active' : ''}}">
         <a href="{{item.link}}">{{item.itemName}}</a>
       </li>
     </ul>

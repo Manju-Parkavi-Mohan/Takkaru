@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NavItem } from '../shared/navitem';
-import { NAVITEMS } from '../shared/navitems';
+import { NavItem } from '../shared/model/nav-item';
+import { NAVITEMS } from '../shared/static-json/nav-items';
 
 @Component({
   selector: 'app-header',

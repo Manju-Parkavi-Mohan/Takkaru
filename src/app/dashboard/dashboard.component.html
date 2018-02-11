@@ -1,25 +1,19 @@
 <div class="container-fluid">
-  <div id="gallery" class="row carousel slide" data-ride="carousel">
+  <div id="carousel" class="row carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#gallery" data-slide-to="0" class="active"></li>
-      <li data-target="#gallery" data-slide-to="1"></li>
-      <li data-target="#gallery" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="/assets/kochi.jpg">
-      </div>
-      <div class="item">
-        <img src="/assets/kudremukh.jpg">
-      </div>
-      <div class="item">
-        <img src="/assets/vagamon.jpg">
+      <div class="item" ngClass="{{carousel.isActive ? 'active' : ''}}" *ngFor="let carousel of carousels">
+        <img src="{{carousel.link}}" alt="{{carousel.name}}" title="{{carousel.name}}">
       </div>
     </div>
-    <a class="left carousel-control" href="#gallery" data-slide="prev">
+    <a class="left carousel-control" href="#carousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#gallery" data-slide="next">
+    <a class="right carousel-control" href="#carousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
