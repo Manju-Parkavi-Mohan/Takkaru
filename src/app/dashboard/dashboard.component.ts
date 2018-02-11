@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Carousel } from '../shared/model/carousel';
-import { CAROUSELS } from '../shared/static-json/carousels';
+import { Image } from '../shared/model/image';
+import { IMAGES } from '../shared/static-json/images';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,11 +10,11 @@ import { CAROUSELS } from '../shared/static-json/carousels';
 })
 export class DashboardComponent implements OnInit {
 
-  carousels: Carousel[]; 
+  images: Image[]; 
   constructor() { }
 
   ngOnInit() {
-    this.carousels = CAROUSELS;
+    this.images = IMAGES;
   }
 
 }

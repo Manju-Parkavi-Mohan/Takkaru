@@ -1,16 +1,29 @@
-<nav class="navbar navbar-fixed navbar-inverse">
+<nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Takkaru Studio</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-tem">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>Takkaru Studio</strong></a>
     </div>
-    <ul class="nav navbar-nav">
-      <li *ngFor="let item of navItems" ngClass="{{item.isActive ? 'active' : ''}}">
-        <a href="{{item.link}}">{{item.itemName}}</a>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
+    <div id="nav-tem" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li *ngFor="let item of navItems" ngClass="{{item.isActive ? 'active' : ''}}">
+          <a href="{{item.link}}"><i class="{{item.icon}}"></i> {{item.itemName}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-user"></span> Sign up</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

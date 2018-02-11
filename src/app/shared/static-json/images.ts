@@ -1,6 +1,6 @@
-import { Carousel } from '../model/carousel';
+import { Image } from '../model/image';
 
-export const CAROUSELS: Carousel[] = [
+export const IMAGES: Image[] = [
     {
         'name': 'Kochi',
         'link': '/assets/kochi.jpg',
@@ -14,6 +14,11 @@ export const CAROUSELS: Carousel[] = [
     {
         'name': 'Kudremukh',
         'link': '/assets/kudremukh.jpg',
+        'isActive': false
+    },
+    {
+        'name': 'Simla',
+        'link': '/assets/simla.jfif',
         'isActive': false
     }
 ]

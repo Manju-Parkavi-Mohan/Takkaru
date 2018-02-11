@@ -1,4 +1,4 @@
-export class Carousel {
+export class Image {
     name: string;
     link: string;
     isActive: boolean;
